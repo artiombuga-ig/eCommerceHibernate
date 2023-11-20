@@ -1,6 +1,5 @@
 package org.buga.data;
 
-import org.buga.entity.Customer;
 import org.buga.utility.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

@@ -11,12 +11,9 @@ public class HibernateUtil {
     @Getter
     private static SessionFactory sessionFactory = buildSessionFactory();
 
-    private static SessionFactory buildSessionFactory()
-    {
-        try
-        {
-            if (sessionFactory == null)
-            {
+    private static SessionFactory buildSessionFactory() {
+        try {
+            if (sessionFactory == null) {
                 StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder()
                         .configure("hibernate.cfg.xml").build();
 

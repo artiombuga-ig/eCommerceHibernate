@@ -28,4 +28,9 @@ public class Customer {
     private String email;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer")
     private List<Order> orders;
+
+    public void addOrder(Order order) {
+        this.orders.add(order);
+        order.setCustomer(this);
+    }
 }
